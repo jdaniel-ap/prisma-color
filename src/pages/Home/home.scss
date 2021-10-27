@@ -1,0 +1,125 @@
+#container {
+  display: flex;
+  align-items: stretch;
+  height: 100vh;
+  overflow: hidden;
+
+  aside {
+    flex: 7;
+
+    background: var(--color-black-pearl);
+    color: var(--color-white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 120px 80px;
+
+    img {
+      max-width: 400px;
+    }
+
+    .wall-data {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    strong {
+      font: 700 36px "Poppins", sans-serif;
+      line-height: 42px;
+      margin-top: 16px;
+    }
+
+    p {
+      font-size: 28px;
+      line-height: 32px;
+      margin-top: 16px;
+      color: var(--color-low-white);
+      text-align: center;
+    }
+  }
+
+  main {
+    animation: fade linear 0.2s;
+    flex: 8;
+
+    padding: 0 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    align-items: stretch;
+    text-align: center;
+    position: relative;
+    align-items: center;
+
+    > img {
+      align-self: center;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 22px;
+      font-family: "Poppins", sans-serif;
+      color: var(--color-black-pearl);
+      font-weight: 500;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+
+      input {
+        height: 50px;
+        border-radius: 8px;
+        padding: 0 16px;
+        font-size: 20px;
+        color: var(--color-black-pearl);
+        background-color: var(--color-white);
+        border: 1px solid var(--color-low-gray);
+        width: 320px;
+        margin: 0 0 5px;
+        font-weight: 300;
+      }
+
+      button {
+        margin-top: 16px;
+      }
+    }
+  }
+
+  p {
+    font-size: 14px;
+    margin-top: 15px;
+    color: var(--color-low-gray);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #page-auth {
+    aside {
+      display: none;
+    }
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

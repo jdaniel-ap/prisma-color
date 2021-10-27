@@ -1,16 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  wall_a: {
+  A: {
 
   },
-  wall_b: {
+  B: {
 
   },
-  wall_c: {
+  C: {
 
   },
-  wall_d: {
+  D: {
 
   },
 }
@@ -20,7 +20,7 @@ const slice = createSlice({
   initialState,
   reducers: {
     setWallDimentions(state, {payload}) {
-      return {...state, payload}
+      return {...state, ...payload}
     },
   }
 });
