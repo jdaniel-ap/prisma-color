@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Boas vindas ao repositório do projeto Paint Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Instruções de uso
 
-## Available Scripts
+1. Clone o repositório
+  * `git clone git@github.com:jdaniel-ap/prisma-color.git`.
+  * * Entre na pasta do repositório que você acabou de clonar:
+    * `cd prisma-color`
 
-In the project directory, you can run:
 
-### `yarn start`
+2. Instale as dependências e inicialize o projeto
+  * Instale as dependências:
+    * `npm install`
+  * Inicialize o projeto:
+    * `npm start` uma janela com esta interface será aberta no navegador
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Views do aplicativo
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Home 
 
-### `yarn test`
+![alt text](https://user-images.githubusercontent.com/74429277/139265375-43320ef1-9674-47d9-99b9-c6236d0f0d67.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Calculadora
+Todas as alertas informativas ou de exceção são fechadas clicando nelas. Cada vez que o botão 'Salvar' é clicado a pessoa usuaria será direcionada para uma página com a mesma interface para registrar os dados das outras paredes.
 
-### `yarn build`
+![alt text](https://user-images.githubusercontent.com/74429277/139267075-e3e9d701-9293-46e6-a0ab-de2ee404d6b8.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Resultado
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image](https://user-images.githubusercontent.com/74429277/139267576-c835ad31-f66a-42a3-bf1a-199f0587feb1.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Alertas
 
-### `yarn eject`
+#### Alerta 1
+![image](https://user-images.githubusercontent.com/74429277/139268241-50e64a36-29d2-4678-9129-d0087ac77768.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Alerta 2
+![image](https://user-images.githubusercontent.com/74429277/139268783-47fcef35-4700-4c72-aa79-9763a14ea80f.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Alerta 3
+![image](https://user-images.githubusercontent.com/74429277/139268380-bcd41b3e-872c-4e97-acdf-ba8fc63efd40.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Alerta 4
+![image](https://user-images.githubusercontent.com/74429277/139268464-393e5634-ce7d-470d-8bd4-2536171f05f6.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
