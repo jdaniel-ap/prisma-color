@@ -9,7 +9,12 @@ import { setWallDimentions } from "../../redux/slices/wallSlice";
 import useRoutes from "../../hooks/useRoutes";
 
 import { initialAlert, initialState, navigation } from "../../utils/utils";
-import { halfAreaError, minHeightError } from "../../utils/errors";
+import {
+  halfAreaError,
+  maximumHeightError,
+  minHeightError,
+  minimumError,
+} from "../../utils/errors";
 
 import "../Home/home.scss";
 
@@ -29,6 +34,11 @@ function WallCalculator() {
       const minHeight = 2.2;
       const totalWindowArea = windowDimension.area * windows;
       const totalDoorArea = doorDimension.area * doors;
+
+      if (dimensions.width < 1 || dimensions.height < 1)
+        throw new Error(minimumError);
+
+      if (dimensions.height > 15) throw new Error(maximumHeightError);
 
       if (doors > 0 && height < minHeight) throw new Error(minHeightError);
 
