@@ -6,10 +6,10 @@ export const initialState = {
 };
 
 export const navigation = {
-  A: "B",
-  B: "C",
-  C: "D",
-  D: "result",
+  A: "/calculator/B",
+  B: "/calculator/C",
+  C: "/calculator/D",
+  D: "/result",
 };
 
 export const initialAlert = `É importante lembrar que as dimensões estão em metros. Clique para fechar`

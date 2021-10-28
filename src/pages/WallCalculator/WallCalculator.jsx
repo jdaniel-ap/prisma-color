@@ -35,8 +35,8 @@ function WallCalculator() {
       if (totalDoorArea + totalWindowArea > wallArea * 0.5)
         throw new Error(halfAreaError);
 
-      resetValues();
       resolveData();
+      resetValues();
     } catch (error) {
       setError(error.message);
     }
@@ -45,11 +45,11 @@ function WallCalculator() {
   const resetValues = () => {
     setError("");
     setDimensions(initialState);
+    router(navigation[wall]);
   };
 
   const resolveData = () => {
     dispatch(setWallDimentions({ [wall]: dimensions }));
-    router(`/calculator/${navigation[wall]}`);
   };
 
   const handleDimensions = ({ target }) => {
